@@ -176,7 +176,6 @@ void main() {
 
   update() {
     let currentKick = this.app.LoadSound.kick;
-    console.log(currentKick);
 
     if (
       this.kickValues.length === 0 ||
