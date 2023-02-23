@@ -176,7 +176,7 @@ void main() {
 
   update() {
     let currentKick = this.app.LoadSound.kick;
-
+    console.log("sadada");
     if (
       this.kickValues.length === 0 ||
       this.kickValues[this.kickValues.length - 1] !== currentKick
