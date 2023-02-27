@@ -1,5 +1,5 @@
 import Sound from "./sound";
-import mp3 from "./mp3/Tututu.mp3";
+import mp3 from "./mp3/music.mp3";
 import App from "./app";
 
 export default class LoadSound {
