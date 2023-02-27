@@ -32722,8 +32722,8 @@ var Debug = /*#__PURE__*/function () {
   }]);
   return Debug;
 }();
-},{}],"src/mp3/music.mp3":[function(require,module,exports) {
-module.exports = "/music.be98ccea.mp3";
+},{}],"src/mp3/code.mp3":[function(require,module,exports) {
+module.exports = "/code.3837b7d0.mp3";
 },{}],"src/loadSound.js":[function(require,module,exports) {
 "use strict";
 
@@ -32732,7 +32732,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _sound = _interopRequireDefault(require("./sound"));
-var _music = _interopRequireDefault(require("./mp3/music.mp3"));
+var _code = _interopRequireDefault(require("./mp3/code.mp3"));
 var _app = _interopRequireDefault(require("./app"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -32742,7 +32742,7 @@ var LoadSound = /*#__PURE__*/function () {
   function LoadSound() {
     var _this = this;
     _classCallCheck(this, LoadSound);
-    this.sound = new _sound.default(_music.default, 145, 0, function () {
+    this.sound = new _sound.default(_code.default, 145, 0, function () {
       return _this.startSound(_this);
     });
     this.kick = 0;
@@ -32786,7 +32786,7 @@ var LoadSound = /*#__PURE__*/function () {
   return LoadSound;
 }();
 exports.default = LoadSound;
-},{"./sound":"src/sound.js","./mp3/music.mp3":"src/mp3/music.mp3","./app":"src/app.js"}],"src/app.js":[function(require,module,exports) {
+},{"./sound":"src/sound.js","./mp3/code.mp3":"src/mp3/code.mp3","./app":"src/app.js"}],"src/app.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32862,7 +32862,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58186" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52418" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
