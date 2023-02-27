@@ -7,7 +7,7 @@
   "source": "public/index.html",
   "scripts": {
     "start": "parcel ./public/index.html --open",
-    "build": "parcel build --public-url ./"
+    "build": "vercel --prod"
   },
   "dependencies": {
     "dat.gui": "^0.7.9",
