@@ -34,9 +34,6 @@ uniform float u_time;
 varying vec2 vUv;
 varying float vDisplacement;
 
-// Classic Perlin 3D Noise 
-// by Stefan Gustavson
-//
 vec4 permute(vec4 x) {
     return mod(((x*34.0)+1.0)*x, 289.0);
 }
@@ -190,7 +187,7 @@ void main() {
     function averageLast10(array) {
       let sum = 0;
       let count = 0;
-      for (let i = array.length - 1; i >= 0 && count < 30; i--) {
+      for (let i = array.length - 1; i >= 0 && count < 15; i--) {
         sum += array[i];
         count++;
       }
